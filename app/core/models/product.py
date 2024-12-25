@@ -1,6 +1,9 @@
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+from sqlalchemy import create_engine
+from sqlalchemy.orm import Mapped, mapped_column, DeclarativeBase, declared_attr
+from .base import Base
 
 
-class Product(Declarative_base):
-    __abstract__ = True
-    id: Mapped[int]
+class Product(Base):
+    name: Mapped[str]
+    description: Mapped[str]
+    price: Mapped[str]
