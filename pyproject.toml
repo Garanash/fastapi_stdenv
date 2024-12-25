@@ -11,6 +11,7 @@ python = "^3.13"
 fastapi = {extras = ["standard"], version = "^0.115.6"}
 black = "^24.10.0"
 sqlalchemy = {extras = ["asyncio"], version = "^2.0.36"}
+pydantic-settings = "^2.7.0"
 
 
 [build-system]
